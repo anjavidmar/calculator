@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon" />
+        <title>Galactic Calculator</title>
+        <meta name="author" content="Anja Vidmar" />
+        <meta name="description" content="Simple calculator but in space!" />
+        <meta name="keywords" content="calculator" />
+        <link href="https://fonts.googleapis.com/css?family=Days+One|Rubik:400,700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="./css/reset.css" />
+        <link rel="stylesheet" type="text/css" href="./css/style.css" />
+    </head>
+    <body>
+        <div class="loading">
+            <div class="orbit">
+                <div class="rocket-axis">
+                    <div class="rocket-aura">
+                        <img class="rocket" src="./assets/rocket.png" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="site-container">
+            <header>
+                <h1>Galactic Calculator</h1>
+            </header>
+            <main>
+                <div id="calculator">
+                    <div id="screen">
+                        <p class="top-screen">{{caculation}}&nbsp;</p>
+                        <p class="screen">{{screen}}&nbsp;</p>
+                    </div>
+                    <div class="button" v-on:click="clearScreen()">
+                        <span>C</span>
+                    </div>
+                    <div class="button"
+                    v-on:click="setNumber('7')">
+                        <span>7</span>
+                    </div>
+                    <div class="button"
+                    v-on:click="setNumber('8')">
+                        <span>8</span>
+                    </div>
+                    <div class="button"
+                    v-on:click="setNumber('9')">
+                        <span>9</span>
+                    </div>
+                    <div class="button" v-on:click="setOperator(3)">
+                        <span>&divide;</span>
+                    </div>
+                    <div class="button" v-on:click="setNumber('4')">
+                        <span>4</span>
+                    </div>
+                    <div class="button" v-on:click="setNumber('5')">
+                        <span>5</span>
+                    </div>
+                    <div class="button" v-on:click="setNumber('6')">
+                        <span>6</span>
+                    </div>
+                    <div class="button" v-on:click="setOperator(2)">
+                        <span>&times;</span>
+                    </div>
+                    <div class="button" v-on:click="setNumber('1')">
+                        <span>1</span>
+                    </div>
+                    <div class="button" v-on:click="setNumber('2')">
+                        <span>2</span>
+                    </div>
+                    <div class="button" v-on:click="setNumber('3')">
+                        <span>3</span>
+                    </div>
+                    <div class="button" v-on:click="setOperator(1)">
+                        <span>&minus;</span>
+                    </div>
+                    <div class="button" v-on:click="setZero()">
+                        <span>0</span>
+                    </div>
+                    <div class="button" v-on:click="setDecimalPoint('.')">
+                        <span>.</span>
+                    </div>
+                    <div class="button" v-on:click="equals()">
+                        <span>&equals;</span>
+                    </div>
+                    <div class="button" v-on:click="setOperator(0)">
+                        <span>&plus;</span>
+                    </div>
+                </div>
+            </main>
+            <footer>
+                <p>&copy; Anja Vidmar / 2019 &nbsp;</p>
+                <p>Background photo by <a href="https://unsplash.com/@shotbycerqueira" target="_blank">Shot by Cerqueira</a></p>
+            </footer>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="./app.js"></script>
+  </body>
+
+</html>
