@@ -2,4 +2,4 @@
 
 A simple calculator, but in space!
 
-[Check me out!](https://www.google.com "go on, calculate something")
+[Check me out!](https://anjavidmar.github.io/calculator/ "go on calculate something")
