@@ -1,7 +1,3 @@
-console.log('hello world, go on calculate something!');
-var h = window.innerHeight;
-var w = window.innerWidth;
-
 var app = new Vue({
     el: '#calculator',
     data: {
@@ -182,12 +178,3 @@ var app = new Vue({
         },
     }
 })
-
-function screenSize(){
-    var screenHeightInfo = 'screen height = ' + h;
-    var screenWidthInfo = 'screen width = ' + w;
-    console.log(screenHeightInfo, screenWidthInfo);
-    document.getElementById('screen-size').innerHTML = screenHeightInfo + '<br />' + screenWidthInfo;
-}
-
-screenSize()
